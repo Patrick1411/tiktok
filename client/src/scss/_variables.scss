@@ -1,0 +1,15 @@
+:root {
+    /* ====== Color ====== */
+    --primary-color: #fe2c55; 
+    --black-color: #161823;
+    --white-color: #fff;
+    --grey-color: #16182308;
+
+    /* ====== Default Layout ====== */
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+}
+
+/* ====== Responsive ====== */
+$mobile-width: 37.5em;
+$tablet-width: 64em;

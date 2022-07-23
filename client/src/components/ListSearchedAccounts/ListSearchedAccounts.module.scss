@@ -1,0 +1,51 @@
+@use '../../scss' as *;
+
+.wrapper {
+    @include flex(center, flex-start);
+    padding: 9px 16px;
+    cursor: pointer;
+    -webkit-box-align: center;
+
+    &:hover {
+        background-color: var(--grey-color);
+    }
+
+    .avatarContainer {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 12px; 
+        overflow: hidden;
+        background-color: #88888880;
+
+        .avatarUser {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .infoUser {
+        .username {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            .checkIcon {
+                margin-left: 4px;
+            }
+        }
+
+        .alias {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: #16182380;
+            font-weight: 400;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

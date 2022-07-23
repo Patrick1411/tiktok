@@ -1,0 +1,26 @@
+:root {
+  /* ====== Color ====== */
+  --primary-color: #fe2c55;
+  --black-color: #161823;
+  /* ====== Default Layout ====== */
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
+}
+
+/* ====== Responsive ====== */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrapper .container {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  width: var(--default-layout-width);
+  min-height: 100px;
+}
+.wrapper .container .content {
+  flex: 1;
+}

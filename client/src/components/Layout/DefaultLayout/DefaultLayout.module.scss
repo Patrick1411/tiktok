@@ -1,0 +1,16 @@
+@use '../../../scss' as *;
+
+.wrapper {
+    @include flex(center, center);
+    flex-direction: column;
+
+    .container {
+        @include flex(center, unset);
+        width: var(--default-layout-width);
+        min-height: 100px;
+
+        .content {
+            flex: 1;
+        }
+    }
+}
